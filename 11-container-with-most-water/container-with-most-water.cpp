@@ -4,16 +4,12 @@ public:
         int ans=0;
         int left=0,right=height.size()-1;
         while(left<=right){
-            if(height[left]<height[right]){
-                int a=height[left]*(right-left);
+            int a=min(height[left],height[right])*(right-left);
                 ans=max(ans,a);
-                left++;
-            }
-            else{
-                int a=height[right]*(right-left);
-                ans=max(ans,a);
-                right--;
-            }
+            if(height[left]<height[right])left++;
+            else right--;
+            
+            
         }
         return ans;
     }
