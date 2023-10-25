@@ -1,4 +1,4 @@
-class Solution {
+class Solution{
 unordered_map<string,int>mp;
 vector<vector<string>> ans;
 string b;
