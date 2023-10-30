@@ -1,4 +1,4 @@
-class Solution {
+class Solution  {
 public:
     int orangesRotting(vector<vector<int>>& grid) {
         int n=grid.size();
