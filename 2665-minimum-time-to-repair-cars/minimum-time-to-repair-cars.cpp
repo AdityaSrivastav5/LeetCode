@@ -11,14 +11,15 @@ public:
         return true;
     }
     long long repairCars(vector<int>& ranks, int cars) {
-        long long l = 1, h = (long long)cars * (long long)cars * 100;
-        long long ans = h;
-        while(l <= h){
-            long long mid = l + (h - l)/2; 
-            if(check(mid, cars, ranks)) { ans = mid; h = mid - 1; }
-            else{ l = mid + 1; }
+        long long low = 1, high = (long long)cars * (long long)cars * 100;
+        while(low <= high){
+            long long mid = low + (high - low)/2; 
+            if(check(mid, cars, ranks))
+                high = mid - 1;
+            else
+                low = mid + 1; 
             
         }
-        return ans;
+        return low;
     }
 };
