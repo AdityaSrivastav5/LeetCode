@@ -5,7 +5,7 @@ public:
         string roman[]={"M","CM","D","CD","C","XC","L",
         "XL","X","IX","V","IV","I"};
         string res;
-        for(int i=0;i<13;i++){
+        for(int i = 0;i<13;i++){
             while(num>=normal[i]){
                 res.append(roman[i]);
                 num-=normal[i];
