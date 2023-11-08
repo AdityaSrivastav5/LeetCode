@@ -4,7 +4,7 @@ public:
         stack<char> st;
         for (char c : s) {
             if (c == 'c') {
-                if (st.size() < 2 || st.top() != 'b') return false;
+                if (st.size() < 2 ||  st.top() != 'b') return false;
                 st.pop();
                 if (st.top() != 'a') return false;
                 st.pop();
