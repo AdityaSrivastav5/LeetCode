@@ -1,8 +1,8 @@
 class Solution {
 public:
     int numEnclaves(vector<vector<int>>& grid) {
-        int n=grid.size();
-        int m=grid[0].size();
+        int n = grid.size();
+        int m = grid[0].size();
         queue<pair<int,int>>q;
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
