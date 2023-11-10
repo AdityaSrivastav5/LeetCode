@@ -3,7 +3,7 @@ public:
     long long fun(vector<int>& piles,int mid){
         long long total_hrs = 0;
         for(int i=0;i<piles.size();i++){
-            total_hrs+=ceil((double)piles[i]/mid);
+            total_hrs += ceil((double)piles[i]/mid);
         }
         return total_hrs;
     }
