@@ -16,7 +16,7 @@ public:
 
         while (l <= r) {
             int mid = l + (r - l) / 2;
-            if (mountainArr.get(mid) < mountainArr.get(mid + 1)) {
+            if (mountainArr.get(mid) < mountainArr.get(mid + 1)){
                 l = mid + 1;
             } else {
                 r = mid - 1;
