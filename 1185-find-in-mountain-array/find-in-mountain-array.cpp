@@ -14,7 +14,7 @@ public:
         int n = mountainArr.length();
         int l = 0 , r = n - 1;
 
-        while (l <= r) {
+        while (l <= r){
             int mid = l + (r - l) / 2;
             if (mountainArr.get(mid) < mountainArr.get(mid + 1)){
                 l = mid + 1;
